@@ -4,6 +4,19 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   tailwindcss: {
-    cssPath: './assets/css/tailwind.css',
+    cssPath: '@/assets/css/tailwind.css',
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'pt-br',
+      },
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Loja de Jogos - NUXT.js',
+      meta: [
+        { name: 'description', content: 'Loja de Jogos - NUXT.js' },
+      ],
+    },
   }
 })

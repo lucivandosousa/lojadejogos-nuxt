@@ -9,7 +9,7 @@
       <div class="flex flex-col items-center flex-wrap justify-around gap-4 lg:flex-row">
         <GameCard
           title="The Witcher 3"
-          price="99.99"  
+          :price=99.99  
           img="https://via.placeholder.com/150"
         />
       </div>
@@ -22,7 +22,7 @@
       <div class="flex flex-col items-center flex-wrap justify-around gap-4 lg:flex-row">
         <GameCard
           title="Total War"
-          price="199.99"  
+          :price=199.99  
           img="https://via.placeholder.com/150"
         />
       </div>
@@ -30,9 +30,3 @@
   </main>
   <Footer />
 </template>
-
-<script setup lang="ts">
-import NavBar from '@/components/NavBar/NavBar.vue'
-import Footer from '@/components/Footer/Footer.vue'
-import GameCard from '@/components/GameCard/GameCard.vue'
-</script>
